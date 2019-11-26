@@ -1,0 +1,83 @@
+/* * {
+  margin: 0; 
+  padding: 0; 
+} */
+
+body {
+	text-align: center;
+	margin: auto;
+}
+
+fieldset {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+#update-game {
+  margin: 20px;
+}
+
+.hit {
+  background: red;
+}
+
+* {
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+.player-info {
+	display: inline-block;
+	text-align: center;
+}
+
+.player-name {
+	margin: 20px;
+	margin-bottom: 0;
+}
+
+#turn-ready, #turn-wait {
+	margin: 0 20px;
+}
+
+.selected {
+  background: #5a85c9;
+}
+
+table { 
+  border-collapse: collapse; 
+  border-spacing: 0; 
+  padding: 0px; 
+  margin: 0 auto; 
+  border: 2px solid #181818; 
+}
+
+#battleship-container, #enemy-container {
+	display: inline-block;
+}
+
+tr td { 
+  width: 20px; 
+  height: 20px; 
+}
+
+tr:nth-child(2n) td:nth-child(2n+1) { 
+  border: solid 1px black;
+}
+
+tr:nth-child(2n+1) td:nth-child(2n) { 
+  border: solid 1px black;  
+} 
+
+.battleship {
+  text-align: center;
+  vertical-align: middle;
+}
+
+td {
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}

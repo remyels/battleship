@@ -1,0 +1,61 @@
+<html>
+<head> 
+	<meta charset="utf-8"/>
+	<title> Battleship </title>    
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" charset="utf-8"></script>  
+	<link href="battleship.css" rel="stylesheet" type="text/css">       
+	<script src="battleship.js"></script>
+</head>
+<body>
+
+	<div id="playing-field">
+		<div class="player-info">
+			<h2 class="player-name">Player</h2>
+			<div id="remove-on-connect">
+				<form id="connect">
+					<input id="tokenInput" name="token" type="text" size="5" placeholder="token"/>
+					<input id="usernameInput" name="name" type="text" size="10" placeholder="username"/>
+					<input id="submitToken" type="submit" value="Connect"/>
+				</form>
+			</div>
+		</div>
+		<div id="battleship-container" style="margin-right: 20%">
+			<table id='battleship'>
+				<tbody id="battleship-body">
+					
+				</tbody>
+			</table>
+		</div>
+		<div class="player-info">
+			<h2 class="player-name">Opponent</h2>
+		</div>
+		<div id="enemy-container">
+			<table id='enemy-battleship'>
+				<tbody id="enemy-battleship-body">
+					
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div id="message-container">
+		<fieldset id="message-fieldset">
+			<legend>Message:</legend>
+			<p id="message">
+				Please connect by entering your personal generated token, as well as your username!
+			</p>
+			<p id="message-continued">
+				
+			</p>
+			<p id="message-error" style="color: red; display: none;" >
+				Invalid ship placement!
+			</p>
+			<p id="message-server" style="color: red; display: none;">
+				Server error! Please refresh the page.
+			</p>
+		</fieldset>
+		<button id="update-game">
+			Refresh game state
+		</button>
+	</div>
+</body>  
+</html>
